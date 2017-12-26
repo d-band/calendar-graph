@@ -68,9 +68,9 @@ this.body = strGraph.render();
   padX: 20,
   padY: 20,
   styleOptions: {
-    textColor = '#959494',
-    fontSize = '12px',
-    fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+    textColor: '#959494',
+    fontSize: '12px',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
   }
 }
 ```
