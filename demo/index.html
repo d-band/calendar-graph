@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendar Graph Demo</title>
+  <style>
+    body {
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    #tooltip {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 20px;
+      background-color: rgba(0, 0, 0, .8);
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 3px;
+    }
+    #tooltip:after {
+      display: block;
+      position: absolute;
+      content: '';
+      bottom: -6px;
+      left: 50%;
+      margin-left: -6px;
+      width: 0; 
+      height: 0; 
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid rgba(0, 0, 0, .8);
+    }
+  </style>
+</head>
+<body>
+  <div id="svg"></div>
+  <canvas id="canvas"></canvas>
+  <pre id="str" style="width: 800px;overflow-x: scroll;background-color: #eee;"></pre>
+  <div id="tooltip">Hello world</div>
+  <script src="./bundle.js"></script>
+</body>
+</html>
