@@ -59,10 +59,19 @@ this.body = strGraph.render();
 
 ```javascript
 {
-  startDate: CurDate - 365 days,
-  endDate: CurDate,
+  onClick: v => {},
   colorFun: v => {},
-  onClick: v => {}
+  startDate: oneYearAgo,
+  endDate: today,
+  size: 12,
+  space: 1,
+  padX: 20,
+  padY: 20,
+  styleOptions: {
+    textColor = '#959494',
+    fontSize = '12px',
+    fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+  }
 }
 ```
 
