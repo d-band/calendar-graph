@@ -1,5 +1,7 @@
 import h from '../h';
-import { diffDays, formatDate, noop, today, oneYearAgo, rectColor } from '../utils';
+import {
+  diffDays, formatDate, noop, today, oneYearAgo, rectColor
+} from '../utils';
 import Days from './Days';
 import Months from './Months';
 import DayTitles from './DayTitles';

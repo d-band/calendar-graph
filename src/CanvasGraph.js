@@ -11,14 +11,17 @@ export default class CanvasGraph {
     this.render();
     this.ctx.onClick = e => this.render(e);
   }
+
   setData(data) {
     this.data = data;
     this.render();
   }
+
   setOptions(options) {
     this.options = { ...this.options, ...options };
     this.render();
   }
+
   render(e) {
     const { data, options } = this;
     render(<Graph data={data} {...options} />, this.ctx, e);

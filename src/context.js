@@ -1,11 +1,11 @@
 export default function createContext(dom) {
   const canvas = typeof dom === 'string' ? document.querySelector(dom) : dom;
   const ctx = canvas.getContext('2d');
-  const backingStore = ctx.webkitBackingStorePixelRatio ||
-    ctx.mozBackingStorePixelRatio ||
-    ctx.msBackingStorePixelRatio ||
-    ctx.oBackingStorePixelRatio ||
-    ctx.backingStorePixelRatio || 1;
+  const backingStore = ctx.webkitBackingStorePixelRatio
+    || ctx.mozBackingStorePixelRatio
+    || ctx.msBackingStorePixelRatio
+    || ctx.oBackingStorePixelRatio
+    || ctx.backingStorePixelRatio || 1;
   const ratio = (window.devicePixelRatio || 1) / backingStore;
 
   ['width', 'height'].forEach((key) => {

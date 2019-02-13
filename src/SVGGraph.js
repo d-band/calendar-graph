@@ -9,14 +9,17 @@ export default class SVGGraph {
     this.options = options;
     this.render();
   }
+
   setData(data) {
     this.data = data;
     this.render();
   }
+
   setOptions(options) {
     this.options = { ...this.options, ...options };
     this.render();
   }
+
   render() {
     const { data, options } = this;
     if (this.tree) {

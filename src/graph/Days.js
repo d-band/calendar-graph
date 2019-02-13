@@ -24,7 +24,7 @@ export default function Days({
                 data-date={formatDate(d.date)}
                 onClick={() => onClick(d)}
               />
-              ))}
+            ))}
           </g>
         );
       })}
