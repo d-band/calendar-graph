@@ -12,7 +12,7 @@ export default function Days({
         const y0 = padY + space;
         return (
           <g>
-            {v.map(d => (
+            {v.map((d) => (
               <rect
                 class="cg-day"
                 x={x}

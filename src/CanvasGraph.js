@@ -9,7 +9,7 @@ export default class CanvasGraph {
     this.data = data;
     this.options = options;
     this.render();
-    this.ctx.onClick = e => this.render(e);
+    this.ctx.onClick = (e) => this.render(e);
   }
 
   setData(data) {

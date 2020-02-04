@@ -8,9 +8,10 @@ env:
 settings:
   react:
     pragma: h
+    version: latest
 
 rules:
-  max-len: ["error", 160]
+  max-len: [2, 160]
   camelcase: 0
   no-plusplus: 0
   no-return-await: 0
@@ -23,3 +24,4 @@ rules:
   react/jsx-filename-extension: 0
   react/no-array-index-key: 0
   react/no-unknown-property: 0
+  react/jsx-props-no-spreading: 0
