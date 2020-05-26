@@ -39,7 +39,7 @@
   "homepage": "https://github.com/d-band/calendar-graph#readme",
   "devDependencies": {
     "@babel/cli": "^7.10.0",
-    "@babel/core": "^7.8.4",
+    "@babel/core": "^7.10.0",
     "@babel/plugin-transform-react-jsx": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
     "babel-eslint": "^10.0.3",
