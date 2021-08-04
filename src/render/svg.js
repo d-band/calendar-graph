@@ -13,7 +13,7 @@ function applyProperties(node, props) {
       if (typeof v === 'function') {
         node.addEventListener('click', v);
       }
-    } else if (k === 'onHover') {
+    } else if (k === 'onMouseOver') {
       if (typeof v === 'function') {
         node.addEventListener('mouseover', v);
       }
