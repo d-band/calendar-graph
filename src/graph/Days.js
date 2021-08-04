@@ -23,7 +23,7 @@ export default function Days({
                 data-count={d.count}
                 data-date={formatDate(d.date)}
                 onClick={() => onClick(d)}
-                onHover={() => onHover(d)}
+                onMouseOver={() => onHover(d)}
               />
             ))}
           </g>
