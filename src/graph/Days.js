@@ -2,7 +2,7 @@ import h from '../h';
 import { formatDate } from '../utils';
 
 export default function Days({
-  values, size, space, padX, padY, colorFun, onClick
+  values, size, space, padX, padY, colorFun, onClick, onHover
 }) {
   return (
     <g>
@@ -23,6 +23,7 @@ export default function Days({
                 data-count={d.count}
                 data-date={formatDate(d.date)}
                 onClick={() => onClick(d)}
+                onMouseOver={() => onHover(d)}
               />
             ))}
           </g>

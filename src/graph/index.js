@@ -17,7 +17,8 @@ export default function Graph({
   space = 1,
   padX = 20,
   padY = 20,
-  styleOptions = {}
+  styleOptions = {},
+  onHover = noop
 }) {
   const values = [];
   const days = diffDays(startDate, endDate);
@@ -49,7 +50,7 @@ export default function Graph({
   const styles = getStyles(styleOptions);
 
   const attrs = {
-    styles, values, size, space, colorFun, padX, padY, onClick
+    styles, values, size, space, colorFun, padX, padY, onClick, onHover
   };
   return (
     <svg width={width} height={height} viewBox={box}>
